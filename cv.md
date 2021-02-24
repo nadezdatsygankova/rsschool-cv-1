@@ -50,7 +50,7 @@ A highly motivated full-stack web developer, seeking for new opportunity to star
 #### Education
 
 Current Certifications:
--	C++ Essential Training. LinkedIn
+- C++ Essential Training. LinkedIn
 
 Certifications in Progress:
 - The Complete 2021 Web Development Bootcamp. Udemy
