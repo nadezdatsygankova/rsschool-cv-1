@@ -1,7 +1,15 @@
+@text-align: center;
+@font-family: 'Gilroy-Bold', sans-serif;
+@background-colorWhite: white;
+@background-color: #F6F6F6;
+@paddingSection: 10px 0 10px;
+@font-size: 18px;
+
 body {
-  text-align: center;
-  font-family: 'Gilroy-Bold', sans-serif;
+  text-align: @text-align;
+  font-family: @font-family;
 }
+
 a {
   color: #828282;
   text-decoration: none;
@@ -9,32 +17,43 @@ a {
   padding-left: 40px;
   padding-right: 40px;
 }
+
 img {
   height: 387px;
   left: 250.69px;
   top: 276.94px;
-  padding: 30px;
+    padding: 30px;
 }
 
-nav{
-  margin:15px;
+h1{
+  font-size: 0.9em;
+  margin-left:10%;
 }
+
 .wrapper {
   max-width: 1445px;
   margin: 0 auto;
   padding: 0 15px;
 }
 /* Section */
+
 .whiteSection {
-  background-color: white;
-  padding: 10px 0 10px;
+  background-color: @background-colorWhite;
+  padding: @paddingSection;
 }
+
 .colorSection {
-  background-color: #F6F6F6;
-  padding: 10px 0 10px;
+  background-color: @background-color;
+  padding: @paddingSection;
 }
+
+// menu
+
 .navbarHome {
   color: #070707;
+}
+nav{
+  margin:15px;
 }
 .hraftertop {
   border: 1px solid #828282;
@@ -44,42 +63,53 @@ nav{
   top: 87.94px;
 }
 /* Author  */
+
 .row {
   display: flex;
   flex-wrap: wrap;
 }
+
 .column {
   float: left;
   width: 25%;
 }
+
 .author {
   font-size: 47.3392px;
   line-height: 59px;
   margin-left: 25%;
 }
+
 .description {
   padding-top: 30%;
 }
 
+// About me Section
+
 .headingSection {
   font-size: 34px;
   line-height: 42px;
-  text-align: center;
+  text-align: @text-align;
 }
+
 .aboutMeDiv {
   padding: 0 10px 50px;
 }
+
 .text {
   font-family: Gilroy-Medium;
-  font-size: 18px;
+  font-size: @font-size;
   line-height: 22px;
-  text-align: center;
+  text-align: @text-align;
 }
+// icon
+
 .icon {
   width: 50px;
   height: 50px;
   padding: 60px;
 }
+
 .icondiv {
   width: 30%;
   margin: auto;
@@ -87,78 +117,89 @@ nav{
 .stars {
   padding: 50px;
 }
+
 .column {
   float: left;
   width: 25%;
 }
+
 .columnIcon {
   float: left;
   width: 25%;
 }
+// portfolio
+
 li{
   list-style-type: none;
 }
-h1{
-  font-size: 0.9em;
-  margin-left:10%;
-}
+
+
 .button {
   background: rgba(1, 4, 8, 0.95);
   border-radius: 20px;
   color: #FFFFFF;
   width: 122px;
-  font-size: 18px;
+  font-size: @font-size;
   padding: 20px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  text-align: center;
+  text-align: @text-align;
   margin: 40px;
 }
+// footer
 .footer {
   height: 30px;
   padding: 10px 20px;
 }
+
 .footerA {
   padding: 10px 20px;
 }
+
 .end {
   font-family: Gilroy-Medium;
   font-size: 14px;
-  text-align: center;
+  text-align: @text-align;
   color: #828282;
   margin: 20px 15px;
 }
-
+// Mobile version
 @media screen and (max-width: 600px) {
-  img {
-    width: 100%;
-    padding: 5px;
-  }
+    img{
+        width: 100%;
+          padding: 5px;
+      }
   .column {
     width: 50%;
   }
-  .description {
+  .description
+  {
     padding-top: 0;
     padding-left: 25%;
   }
 
+
+
   .columnIcon {
     width: 100%;
   }
+
   .menu {
     width: 50px;
     height: 50px;
     margin-left: 90%;
+
+    span {
+      display: block;
+      width: 90%;
+      height: 10px;
+      background: black;
+      margin: 6px auto;
+      border-radius: 6px;
+    }
   }
-  .menu span {
-    display: block;
-    width: 90%;
-    height: 10px;
-    background: black;
-    margin: 6px auto;
-    border-radius: 6px;
-  }
+
   nav {
     display: none;
   }
