@@ -1,7 +1,0 @@
-{
-  "allowedExtensions":[".less"],
-  "manified": false,
-  "sourceMap":false,
-  "watchFolder":"less",
-  "outputFolder":"css"
-}
